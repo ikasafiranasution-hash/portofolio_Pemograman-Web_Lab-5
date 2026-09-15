@@ -1,25 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoli Saya</title>
+
+    <title>Portofolio Saya</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #f3e5f5;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1{
+            color: white;
+            font-size: 36pt;
+            margin: 0;
+            padding: 25px;
+            text-align: center;
+            background-color: #6a1b9a;
+        }
+
+        nav{
+            background-color: #8e24aa;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: yellow;
+        }
+
+        main{
+            width: 90%;
+            margin: auto;
+        }
+
+        section{
+            background-color: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        #Home{
+            text-align: center;
+            background-color: #e1bee7;
+        }
+
+        #Home h2{
+            color: #6a1b9a;
+        }
+
+        #Home img{
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        #About h2{
+            color: #8e24aa;
+        }
+
+        p{
+            margin-left: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        #Contact{
+            background-color: #fce4ec;
+            padding: 25px;
+            text-align: center;
+        }
+
+        #Contact h2{
+            color: #ad1457;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea{
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ba68c8;
+            border-radius: 8px;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        input[type="submit"]{
+            background-color: #8e24aa;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        ul{
+            padding: 0;
+        }
+
+        li{
+            display: inline-block;
+            background-color: #8e24aa;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <nav>
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#project.html">Portofolio</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
+
     <header>
-        <main>
-            <section id="Home">
-                <h2>Hello, I'm Ika</h2>
-                <img src="foto.jpeg" alt="foto saya" width="300px">
-            </section>
-        </main>
+
+        <h1>PORTOFOLIO SAYA</h1>
+
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="project.html">Portofolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
     </header>
+
+    <main>
+
+        <section id="Home">
+
+            <h2>Hello, Saya Ika</h2>
+
+            <img src="foto.jpeg" alt="foto saya">
+
+        </section>
+
+
+        <section id="About">
+
+            <h2>About Me</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas laborum illum voluptates. Corporis accusantium ipsum
+                ipsam, quos explicabo modi odio dignissimos nemo animi vel
+                debitis doloremque aspernatur perspiciatis possimus eligendi
+                molestias, voluptates itaque vero aut magni at ullam odit.
+            </p>
+
+        </section>
+
+
+        <section id="Contact">
+
+            <h2>Message for Me</h2>
+
+            <form action="">
+
+                <label for="nama">Nama</label>
+                <input type="text" id="nama">
+
+                <br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <br>
+
+                <label for="Pesan">Pesan</label>
+                <textarea name="Pesan" id="Pesan"></textarea>
+
+                <br>
+
+                <input type="submit" value="Kirim">
+
+            </form>
+
+
+            <h2>Follow Me</h2>
+
+            <ul>
+                <li>Instagram</li>
+                <li>Github</li>
+                <li>Linkedin</li>
+            </ul>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
